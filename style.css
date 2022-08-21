@@ -1,0 +1,144 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: linear-gradient(270deg, #f3904f, #3b4371);
+  background-size: 400% 400%;
+
+  -webkit-animation: bgGradient 16s alternate infinite;
+  -moz-animation: bgGradient 16s alternate infinite;
+  animation: bgGradient 16s alternate infinite;
+  font-family: Inter, sans-serif;
+}
+
+@-webkit-keyframes bgGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes bgGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes bgGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container-main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-weatherApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 90%;
+  width: 90%;
+  border-radius: 8pt;
+  max-width: 760px;
+}
+
+#searchField {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 90%;
+  display: none;
+  margin: 0 auto;
+  height: 3rem;
+  padding: 0 42px;
+  background-image: url("./img/icon-search-light.svg");
+  background-repeat: no-repeat;
+  background-position: 12px;
+  border-radius: 8pt;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: -8px;
+}
+
+#searchField:focus,
+#searchField:focus-visible,
+#searchField:focus-within {
+  width: 76vw;
+  max-width: 510px;
+}
+
+.btn-rounded {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: block;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.display-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+}
+
+.title-hero-city,
+.actualWeather-text {
+  font-size: 1.6rem;
+}
+
+.num-hero {
+  font-size: 4rem;
+}
+
+.weatherLogo {
+  width: 100px;
+}
